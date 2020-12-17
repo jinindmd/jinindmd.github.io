@@ -2,166 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-family: Arial;
-        padding: 10px;
-        background: #ffc4d5;
-      }
-
-      /* header/Blog Title*/
-
-      .header {
-        padding: 30px;
-        text-align: center;
-        background: white;
-      }
-
-      .header h1 {
-        font-size: 50px;
-      }
-
-      /* Style the top navigation bar */
-
-      .topnav {
-        overflow: hidden; /*visible, scroll, auto*/
-        background-color: #ff9cb8;
-      }
-
-      /* Style the topnav links */
-
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      /* Change color on hover */
-
-      .topnav a:hover {
-        background-color: #ff6b95;
-        color: black;
-      }
-
-      /* Create two unequal columns that floats next to each other */
-      /* left column */
-      .leftcolumn {
-        float: left;
-        width: 75%;
-      }
-
-      /*Right column*/
-
-      .rightcolumn {
-        float: left;
-        width: 25%;
-        background-color: #ffc4d5;
-        padding-left: 20px;
-      }
-
-      /* Fake image */
-      .fakeimg {
-        background-color: #aaa;
-        width: 100%
-        padding: 20px;
-      }
-      /* Add a card effect fpr artocles */
-      .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-      }
-
-      /* Clear floats after the columns :컬럼 다음에 float 해제*/
-      .row:after { /*begore*/
-        content:""; /**.row 다음에 content "" 안에 있는 내용을 입력하시오.*/
-        display: table;
-        clear: both;
-      }
-
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ffc4d5;
-        margin-top: 20px;
-      }
-       /* Responsive layout- when the screen is less than 800px wide,
-       make the two columns stack on top of each other instead of next to eact other */
-      @media screen and (max-width: 800px) {
-        .leftcolumn, .rightcolumn {
-          width: 100%;
-          padding: 0;
-        }
-      }
-      /* Responsive layout- when the screen is less than 800px wide,
-      make the two columns stack on top of each other instead of next to eact other */
-      @media screen and (max-width: 400px) {
-        .topnav a {
-          float: none;
-          width: 100%
-        }
-      }
-
-    </style>
+    <title> 1 </title>
+<link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="header">
-      <h1>JIN'S PORTFOLIO</h1>
-      <p>WELCOME! :D</p>
-    </div>
-
-    <div class="topnav">
-     <a href="1.html">PLANNING</a>
-     <a href="2.html">DESIGN</a>
-     <a href="3.html">PROGRAMMING</a>
-     <a href="#" style='float:right'>JIN</a>
-    </div>
-
+  <body><div class="topnav">
+    <a href="#" style='float:right'> <img src='./img/logo.png' width='100%'> </a>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+      <div class="sidebar">
+        <div class="card">
+          <ul class="list">
+            <br><br><br><br><br>
+            <a href="2_1.html"><h2>포트폴리오</h2></a> <br>
+            <a href="3_1.html"><li>기획</li></a> <br><br>
+            <a href="3_2.html"><li>디자인</li></a><br>
+            <a href="3_3.html"><li>프로그래밍</li></a><br>
+            <br><br><br><br><br>
+            <a href="2_2.html"><h2>프로필</h2></a> <br>
+            <a href="3_4.html"><li>나의 프로필</li></a><br>
+            <a href="3_5.html"><li>작업 문의</li></a><br>
+          </ul>
+        </div>
+      </div>
+  </div>
     <div class="row">
-      <div class="leftcolumn">
         <div class="card">
-          <h2>Cute! ♡♡♡</h2>
-          <h5>귀여운 것들</h5>
-          <img src="img/cat2.jpg" width="400">
-          <img src="img/ham.jpg" width="500">
-          <p>햄쥐아이스</p>
-          <p>귀여운 사진들을 모으는 것을 좋아합니다. 보일 때 마다 모으다보니 폴더가 생겼어요! <br> 더 귀여운 사진들을 원하신다면 DM주세요.</p>
-        </div>
-        <div class="card">
-          <h2>Heart! ♡♡♡</h2>
-          <h5>사랑스러운 것들</h5>
-          <img src="img/h1.jpg" width="200">
-          <img src="img/h2.jpg" width="200">
-          <img src="img/h3.jpg" width="200">
-          <p>Hearts...</p>
-          <p>하트 모양을 정말 좋아합니다. 다양한 하트들이 모여있으면 너무 귀여워요. <br> 결론적으로 귀여운걸 좋아하는 것 같네요.</p>
-        </div>
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>Yoo JIN</h2>
-          <img src="img/profile.png" width="300">
-          <p> Name : Yoo Jin <br> <br> Birth : 2001.11.19 <br> <br> Contact : instagram - @aoioioa <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mail - jinindmd@gmail.com</p>
-        </div>
-        <div class="card">
-          <h3>My cat</h3>
-          <img src="img/cat.png" width="300">
-          <p>Name : Pepper <br> <br> Age : 1</p>
+          <div class="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+              <h2>나누는 디자이너,</h2>
+              <h1>유진입니다.</h1>
+              <br><br>
+              <p>저는 평소에도 무언가를 만들거나 제작하고 그것을 나누어
+              주변 사람들이 <br>기뻐할 때 가장 보람을 느낍니다.<br>
+            저의 디자인을 보는 사람들에게 편리함, <br>즐거움,
+          그리고 더 많은 것들을 <br>나누어 주고 싶습니다.</p>
+                 <a href='1.html'>÷</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="footer">
-      <h2>aoioioa</h2>
-    </div>
+      <div class="footer">
+        <h2>@aoioioa</h2>
+      </div>
   </body>
 </html>
