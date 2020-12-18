@@ -28,12 +28,6 @@ a:active {text-decoration: none; color: #333333;}
 .topnav a:hover {
   color: #fff;
 }
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%
-  }
-}
 
 .card {
   background-color: white;
@@ -178,7 +172,12 @@ a:active {text-decoration: none; color: #333333;}
   background: #fff;
   color: #333;
 }
-
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%
+  }
+}
 @media screen and (max-width: 800px) {
   .content .square .column {
     width: 100%;
